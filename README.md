@@ -199,7 +199,7 @@ If you are serving ES5 custom elements (either from source or by compilation wit
 
 #### project.addCustomElementsEs5Adapter()
 
-This method will return a transform stream that identifies your entrypoint HTML file (by looking for a webcomponents polyfill import) and injects a block of HTML that loads the Custom Elements ES5 Adapter. You can use this in a build pipeline to conditionally inject the adapter only when you are serving ES5.
+This method will return a transform stream that identifies your entrypoint HTML file (by looking for a webcomponents polyfill import) and injects a block of HTML that loads the Custom Elements ES5 Adapter. You can use this in a build pipeline to conditionally inject the adapter only when you output ES5 (as it is not needed when you output ES6).
 
 ```js
 const gulp = require('gulp');
